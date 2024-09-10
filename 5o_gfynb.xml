@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.SqlServer.WMIDRTask</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask">
+			<summary>The <see cref="N:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask" /> namespace contains the interfaces and classes used for the WMI Data Reader Task, which uses Windows Management Instrumentation (WMI) to return information about a computer system. For more information about the WMI Data Reader Task, see WMI Data Reader Task.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType">
+			<summary>Determines the type of destination specified in the <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> property of a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> class.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.FileConnection">
+			<summary>The <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> property contains the name of a file connection that receives the results of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.Variable">
+			<summary>The <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> property contains the name of a String or Object variable that receives the results of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType">
+			<summary>Determines the type of output returned by a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> class.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.DataTable">
+			<summary>Output is returned as a <see cref="T:System.Data.DataTable" />.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.PropertyNameAndValue">
+			<summary>Output is returned as a String that contains the name and value of a specified property.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.PropertyValue">
+			<summary>Output is returned as a String that contains the value of a specified property.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination">
+			<summary>Determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> class writes data to the destination specified in <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" />.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.AppendToDestination">
+			<summary>The task appends its results to existing data at the specified destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.KeepOriginal">
+			<summary>If data already exists at the specified destination, an error occurs.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.OverwriteDestination">
+			<summary>The task overwrites existing data at the specified destination.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType">
+			<summary>Determines the source type of <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" />, which provides the Windows Management Instrumentation Query Language (WQL) query to be executed by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> class.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.DirectInput">
+			<summary><see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" />  contains the WQL query.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.FileConnection">
+			<summary><see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> contains the name of a file connection from which to retrieve the WQL query.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.Variable">
+			<summary><see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource" /> contains the name of a variable from which to retrieve the WQL query.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask">
+			<summary>Contains the members used to configure and run a WMI Data Reader task, which runs Windows Management Instrumentation (WMI) queries and returns WMI data about a computer system. This class cannot be inherited. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> class.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+			<summary>Passes a <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> reference to the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> task. This method is called by the runtime and is not used in code.</summary>
+			<param name="manager">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> reference to be passed.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+			<summary>Runs the task.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> indicating the outcome of the execution.</returns>
+			<param name="connections">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> collection for the task.</param>
+			<param name="events">A reference to an object that implements <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />  to raise events. </param>
+			<param name="log">A reference to an object that implements <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+			<param name="transaction">The transaction object that the task is part of, depending on the value found in the TransactionOption property. This value can be set to a null reference (Nothing in Visual Basic).</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+			<summary>Initializes the properties associated with the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> task. This method is called by the runtime and is not used in code.</summary>
+			<param name="connections">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for receiving events.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface for logging events.</param>
+			<param name="eventInfos">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" /> object.</param>
+			<param name="logEntryInfos">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" /> object. </param>
+			<param name="refTracker">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" /> object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To load a package saved as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="rootNode">The XML element that contains the information to load.</param>
+			<param name="events">An object that implements <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.ResumeExecution">
+			<summary>Resumes execution of the task after pausing. The task or container is resumed by the runtime engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To save a package as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="doc">The XmlDocument that contains the XML element that represents the task.</param>
+			<param name="events">An object that implements <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SuspendExecution">
+			<summary>Indicates that the executable needs to suspend. This method is called by the runtime engine.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+			<summary>Verifies that the task is properly configured.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> value that indicates the outcome of the validation.</returns>
+			<param name="connections">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for receiving events.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface for logging events.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.DebugMode">
+			<summary>A Boolean that indicates whether <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> should check if breakpoints are enabled. </summary>
+			<returns>true if the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> task should check for enabled breakpoints; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination">
+			<summary>Gets or sets the name of the destination for the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+			<returns>A String that contains the name of the destination.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.DestinationType">
+			<summary>Gets or sets a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType" /> value that indicates the type of destination, such as a file or a variable, used by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType" /> value. The default is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.DestinationType.FileConnection" />.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.ExecutionValue">
+			<summary>Gets an Object that contains the results of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> task.</summary>
+			<returns>An Object that contains the results of the task.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Output">
+			<summary>Gets or sets an Object that contains the results of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> task.</summary>
+			<returns>An Object that contains the results of the task.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.OutputType">
+			<summary>Gets or sets a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType" /> value that indicates the type of output, such as a <see cref="T:System.Data.DataTable" /> or a string, returned by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType" /> value. The default is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OutputType.DataTable" />.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.OverwriteDestination">
+			<summary>Gets or sets a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination" /> value that determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> should handle existing data in the destination specified by the <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.Destination" /> property.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination" /> value. The default is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.OverwriteDestination.KeepOriginal" />.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.SuspendRequired">
+			<summary>Gets or sets a Boolean that indicates if tasks should suspend when they encounter a breakpoint. This value is set by the runtime engine for tasks and containers when a breakpoint is encountered.</summary>
+			<returns>true if the task suspends when it encounters a breakpoint.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WmiConnection">
+			<summary>Gets or sets the name of the <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> used by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" /> task.</summary>
+			<returns>The name of the <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> associated with the task.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySource">
+			<summary>Gets or sets the source of the Windows Management Instrumentation Query Language (WQL) query to be executed by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+			<returns>A String containing the source of the WQL query.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask.WqlQuerySourceType">
+			<summary>Gets or sets a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> value that indicates the source type, such as file connection or a variable, of the Windows Management Instrumentation Query Language (WQL) query to be executed by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.WmiDataReaderTask" />.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> value. The default is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.QuerySourceType.DirectInput" />.</returns>
+		</member>
+	</members>
+</doc>
